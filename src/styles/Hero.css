@@ -1,0 +1,49 @@
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 8rem;
+  background-color: var(--navy);
+}
+
+.hero-greeting {
+  color: var(--green);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.hero-name {
+  color: var(--white);
+  font-size: 4rem;
+  margin: 0;
+}
+
+.hero-tagline {
+  color: var(--slate);
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+.hero-bio {
+  color: var(--slate);
+  max-width: 540px;
+  font-size: 1rem;
+  margin-top: 1.5rem;
+}
+
+.hero-cta {
+  margin-top: 2rem;
+  font-size: 1rem;
+  color: var(--green);
+  border: 1px solid var(--green);
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  width: fit-content;
+  transition: all 0.2s ease;
+}
+
+.hero-cta:hover {
+  background-color: var(--green);
+  color: var(--navy);
+}

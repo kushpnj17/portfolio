@@ -6,14 +6,21 @@
   --font-mono: 'Fira Code', monospace;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
   background-color: var(--background);
   color: var(--text-light);
   font-family: var(--font-mono);
+  line-height: 1.4;
 }
 
 a {
-  color: inherit;
+  color: var(--primary);
   text-decoration: none;
 }
