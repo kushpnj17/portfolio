@@ -3,47 +3,75 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 8rem;
-  background-color: var(--navy);
+  padding-left: 8rem; /* desktop-first */
+  background-color: var(--background);
 }
 
 .hero-greeting {
-  color: var(--green);
+  color: var(--primary);
   font-size: 1rem;
   margin-bottom: 1rem;
 }
 
 .hero-name {
-  color: var(--white);
+  color: var(--text-light);
   font-size: 4rem;
   margin: 0;
+  letter-spacing: 0.5px;
 }
 
 .hero-tagline {
-  color: var(--slate);
-  font-size: 2rem;
+  color: var(--text-dark);
+  font-size: 1.75rem;
   margin-top: 1rem;
+  max-width: 900px;
 }
 
-.hero-bio {
-  color: var(--slate);
-  max-width: 540px;
-  font-size: 1rem;
-  margin-top: 1.5rem;
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.btn {
+  font-size: 0.95rem;
+  padding: 0.75rem 1.25rem;
+  border-radius: 6px;
+  transition: transform 120ms ease, background-color 120ms ease, color 120ms ease, border-color 120ms ease;
+  border: 1px solid transparent;
+  text-align: center;
+}
+
+.btn-outline {
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-outline:hover {
+  background-color: var(--primary);
+  color: var(--background);
+  transform: translateY(-1px);
+}
+
+.btn-solid {
+  background-color: var(--primary);
+  color: var(--background);
+  border-color: var(--primary);
+}
+
+.btn-solid:hover {
+  filter: brightness(1.05);
+  transform: translateY(-1px);
 }
 
 .hero-cta {
   margin-top: 2rem;
   font-size: 1rem;
-  color: var(--green);
-  border: 1px solid var(--green);
-  padding: 0.75rem 1.5rem;
-  border-radius: 4px;
-  width: fit-content;
-  transition: all 0.2s ease;
+  color: var(--primary);
+  border-bottom: 1px solid transparent;
+  width: max-content;
 }
 
 .hero-cta:hover {
-  background-color: var(--green);
-  color: var(--navy);
+  border-bottom-color: var(--primary);
 }
